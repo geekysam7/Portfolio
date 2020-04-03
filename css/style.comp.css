@@ -78,4 +78,20 @@ svg {
     top: 50%;
     transform: translate(-50%, -50%); } }
 
-/**/
+#Vector_2 {
+  animation: blinkme1 1s infinite; }
+
+@keyframes blinkme1 {
+  from {
+    fill: #FF6584; }
+  to {
+    fill: white; } }
+
+#Vector_5 {
+  animation: blinkme2 1s infinite; }
+
+@keyframes blinkme2 {
+  from {
+    fill: #63FF7C; }
+  to {
+    fill: blue; } }

@@ -30,8 +30,8 @@ html {
 
 svg {
     position: absolute;
-    height: 85%;
-    width: 45%;
+    height: 80%;
+    width: 40%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -40,8 +40,8 @@ svg {
 @media only screen and (max-width: 1500px) { 
     svg {
         position: absolute; 
-        height: 110%; 
-        width: 55%; 
+        height: 100%; 
+        width: 50%; 
         left: 50%; 
         top: 50%;
         transform: translate(-50%, -50%);
@@ -57,8 +57,8 @@ svg {
         }
     svg {
         position: absolute; 
-        height: 150%; 
-        width: 70%; 
+        height: 100%; 
+        width: 50%; 
         left: 50%; 
         top: 50%;
         transform: translate(-50%, -50%);
@@ -66,4 +66,78 @@ svg {
 
 }
 
-/**/
+#Vector_14 {
+    animation: blink1 3s infinite;
+}
+
+#Vector_8 {
+    animation: blink2 5s infinite;
+}
+
+#Vector_11 {
+    animation: blink3 2s infinite
+}
+
+#Vector_2 {
+    animation: blink4 1.5s infinite
+}
+
+#Vector_5 {
+    animation: blink5 3s infinite
+}
+
+@keyframes blink1 {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FF63CA;
+    }
+    100% {
+        fill: white;
+    }
+}
+@keyframes blink2 {
+    0% {
+        fill: white;
+    }
+    50%{
+        fill: #FFC163;
+    }
+    100% {
+        fill: white;
+    }
+}
+@keyframes blink3 {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #63FF7C;
+    }
+    100%{
+        fill: white;
+    }
+}
+@keyframes blink4 {
+    0% {
+        fill: white;
+    }
+    50%{
+        fill: #FF6584;
+    }
+    100% {
+        fill: white;
+    }
+}
+@keyframes blink5 {
+    0% {
+        fill: white;
+    }
+    50%{
+        fill: #63FF7C;
+    }
+    100% {
+        fill: white;
+    }
+}
