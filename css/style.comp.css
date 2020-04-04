@@ -7,7 +7,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background: #D3CCE3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   @media only screen and (max-width: 900px) {
     html {
       font-size: 50%; } }
@@ -50,8 +56,8 @@ html {
 
 svg {
   position: absolute;
-  height: 85%;
-  width: 45%;
+  height: 80%;
+  width: 40%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
@@ -59,8 +65,8 @@ svg {
 @media only screen and (max-width: 1500px) {
   svg {
     position: absolute;
-    height: 110%;
-    width: 55%;
+    height: 100%;
+    width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); } }
@@ -72,26 +78,93 @@ svg {
     font-size: 5rem; }
   svg {
     position: absolute;
-    height: 150%;
-    width: 70%;
+    height: 100%;
+    width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); } }
 
-#Vector_2 {
-  animation: blinkme1 1s infinite; }
+#Vector_14 {
+  animation: blink1 3s infinite; }
 
-@keyframes blinkme1 {
-  from {
-    fill: #FF6584; }
-  to {
-    fill: white; } }
+#Vector_8 {
+  animation: blink2 5s infinite; }
+
+#Vector_11 {
+  animation: blink3 2s infinite; }
+
+#Vector_2 {
+  animation: blink4 1.5s infinite; }
 
 #Vector_5 {
-  animation: blinkme2 1s infinite; }
+  animation: blink5 3s infinite; }
 
-@keyframes blinkme2 {
-  from {
+@keyframes blink1 {
+  0% {
+    fill: white; }
+  50% {
+    fill: #FF63CA; }
+  100% {
+    fill: white; } }
+
+@keyframes blink2 {
+  0% {
+    fill: white; }
+  50% {
+    fill: #FFC163; }
+  100% {
+    fill: white; } }
+
+@keyframes blink3 {
+  0% {
+    fill: white; }
+  50% {
     fill: #63FF7C; }
-  to {
-    fill: blue; } }
+  100% {
+    fill: white; } }
+
+@keyframes blink4 {
+  0% {
+    fill: white; }
+  50% {
+    fill: #FF6584; }
+  100% {
+    fill: white; } }
+
+@keyframes blink5 {
+  0% {
+    fill: white; }
+  50% {
+    fill: #63FF7C; }
+  100% {
+    fill: white; } }
+
+#Vector_29 {
+  fill: blue; }
+
+#Vector_30 {
+  fill: darkblue; }
+
+#Vector_31 {
+  fill: pink; }
+
+#Vector_32 {
+  fill: black; }
+
+#Vector_33 {
+  fill: gold; }
+
+#Vector_34 {
+  fill: green; }
+
+#headphones {
+  animation: moveit 3s infinite;
+  transform-origin: 50% 50%; }
+
+@keyframes moveit {
+  0% {
+    transform: rotate(-5deg); }
+  50% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(-5deg); } }
