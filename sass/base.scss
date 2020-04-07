@@ -1,3 +1,12 @@
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//Responsive Breakpoints
+$bp-largest: 75em; //1200px 1200/16
+$bp-large: 62.5em; //1000px 1000/16
+$bp-medium: 50em; //800/16
+$bp-small: 37.5em; //600/16
+
 *,
 *::before,
 *::after {
@@ -9,23 +18,23 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    background: #D3CCE3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
     @media only screen and (max-width: 900px) {
         font-size: 50%;
     }
 }
 
-.container {
-    display: flex;
-    height: 100vh;
-    font-size: 10rem;
-    align-items: center;
-    justify-content: center;
+// .container {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//     font-size: 10rem;
+//     align-items: center;
+//     justify-content: center;
 
-    @media only screen and (max-width: 900px) {
-        font-size: 5rem;
-    }
-}
+//     @media only screen and (max-width: 900px) {
+//         font-size: 5rem;
+//     }
+// }

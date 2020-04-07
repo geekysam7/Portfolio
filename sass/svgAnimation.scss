@@ -1,26 +1,6 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-size: 10rem;
-    align-items: center;
-    justify-content: center;
-}
-
 .Building {
+    display: flex;
+    justify-content: flex-end;
     position: relative; 
     height: 0; 
     width: 100%; 
