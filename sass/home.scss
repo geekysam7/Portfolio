@@ -499,16 +499,94 @@ a svg {
     }
 
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 645px) {
     
+    .home {
+        grid-template-columns: .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr;
+    }
+
     .text-area {
-        grid-column: 6/16;
+        grid-column: 8/16;
+        margin-left: 0px;
     }
     .boom {
-        font-size: 1.4rem;
-        height: 2.2rem;
+        font-size: 1.8rem;
 	}
 	.infoAboutMe {
 		font-size: .8rem;
+    }
+
+    svg {
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+
+    .github svg {
+        height: 3.1rem;
+        width: 3.1rem;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    
+    .text-area {
+        grid-column: 6/16;
+        margin-left: 30px;
+    }
+    .boom {
+        font-size: 1.8rem;
+        height: 3rem;
+    }
+    .text-area-about-button a {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+	
+	.text-area {
+        grid-column: 1/-1;
+		margin-left: 100px;
+	}
+	
+    .boom {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450) {
+	.text-area {
+		margin-left: 50px;
+	}
+	.boom {
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (max-width: 400px) {
+
+	.text-area {
+		margin-left: 40px;
+	}
+	.boom {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+
+	.text-area {
+		margin-left: 30px;
+	}
+	.boom {
+		font-size: 1.5rem;
+	}
+
+	.github {
+		display: none;
+	}
+
+	svg {
+		height: 3rem;
+		width: 3rem;
 	}
 }
