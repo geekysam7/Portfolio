@@ -451,10 +451,10 @@ a svg {
     }
     
     .hr-R1 {
-        grid-column: 5/6;
+        grid-column: 1/-1;
         border-style: none;
         grid-row: 2/3;
-        background: #222;
+		background: #222;
     }
 
     .hr-R2 {
@@ -502,7 +502,16 @@ a svg {
 @media only screen and (max-width: 645px) {
     
     .home {
-        grid-template-columns: .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr;
+		grid-template-columns: .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr;
+		grid-template-rows: 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr 1fr .02fr;
+	}
+	.hr-R1 {
+        grid-column: 1/-1;
+        border-style: none;
+        grid-row: 2/3;
+		background: #03001e; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
     }
 
     .text-area {
